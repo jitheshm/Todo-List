@@ -35,7 +35,7 @@ function App() {
 
   return (
     <main>
-      <Sidebar />
+    
       {/* <Today /> */}
       <RouterProvider router={router} />
       {/* <CreateTask/> */}

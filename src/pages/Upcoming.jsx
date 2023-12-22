@@ -1,10 +1,14 @@
+import Layout from "../components/Layout"
 import Task from "../components/Task"
 
 
 function Upcoming() {
     return (
         <>
-            <Task title="Upcoming Task" />
+            <Layout>
+                <Task title="Upcoming Task" />
+            </Layout>
+
         </>
     )
 }

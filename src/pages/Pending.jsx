@@ -1,11 +1,15 @@
 
+import Layout from '../components/Layout'
 import Task from '../components/Task'
 
 function Pending() {
-  return (
-   <>
-    <Task title="Pending Task"/>
-   </> 
+    return (
+        <>
+            <Layout>
+                <Task title="Pending Task" />
+            </Layout>
+
+        </>
     )
 }
 

@@ -1,12 +1,15 @@
 
+import Layout from '../components/Layout'
 import Task from '../components/Task'
 
 function Today() {
-  return (
-    <>
-     <Task title="Today's Task"/>
-    </>
-  )
+    return (
+        <>
+            <Layout>
+                <Task title="Today's Task" />
+            </Layout>
+        </>
+    )
 }
 
 export default Today

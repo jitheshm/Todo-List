@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 
 
 
@@ -29,29 +30,29 @@ function Sidebar() {
                     </a>
                     <ul className="nav nav-pills nav-flush flex-column mb-auto text-center">
                         <li className="nav-item">
-                            <a href="#" className="nav-link py-3 border-bottom" title="Today" data-bs-toggle="tooltip" data-bs-placement="right">
-                                
+                            <Link to={`/`} className="nav-link py-3 border-bottom" title="Today" data-bs-toggle="tooltip" data-bs-placement="right">
+                                 
                                 <img src="images/run.png" alt srcSet width={16} height={18} />
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="#" className="nav-link py-3 border-bottom text-white" title="Upcoming" data-bs-toggle="tooltip" data-bs-placement="right">
+                            <Link to={`/upcoming`} className="nav-link py-3 border-bottom text-white" title="Upcoming" data-bs-toggle="tooltip" data-bs-placement="right">
                                 <svg className="bi" width={24} height={24} role="img" aria-label="Dashboard">
                                     <use xlinkHref="#speedometer2" />
                                 </svg>
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="#" className="nav-link py-3 border-bottom text-white" title="pending" data-bs-toggle="tooltip" data-bs-placement="right">
+                            <Link to={`/pending`} className="nav-link py-3 border-bottom text-white" title="pending" data-bs-toggle="tooltip" data-bs-placement="right">
                                 <svg className="bi" width={24} height={24} role="img" aria-label="Orders">
                                     <use xlinkHref="#table" />
                                 </svg>
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="#" className="nav-link py-3 border-bottom text-white" title="Completed" data-bs-toggle="tooltip" data-bs-placement="right">
+                            <Link to={`/completed`} className="nav-link py-3 border-bottom text-white" title="Completed" data-bs-toggle="tooltip" data-bs-placement="right">
                                 <img src="images/date.png" alt srcSet width={16} height={18} />
-                            </a>
+                            </Link>
                         </li>
                         <li>
                             <a href="#" className="nav-link py-3 border-bottom text-white" title="Add Task" data-bs-toggle="tooltip" data-bs-placement="right">

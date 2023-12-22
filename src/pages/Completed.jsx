@@ -1,12 +1,16 @@
 
+import Layout from '../components/Layout'
 import Task from '../components/Task'
 
 function Completed() {
-  return (
-    <>
-    <Task title="Completed Tasks"/>
-    </>
-  )
+    return (
+        <>
+            <Layout>
+                <Task title="Completed Tasks" />
+            </Layout>
+
+        </>
+    )
 }
 
 export default Completed
