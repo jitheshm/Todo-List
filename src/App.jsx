@@ -12,7 +12,7 @@ import Pending from "./pages/Pending";
 import Completed from "./pages/Completed";
 import { createContext, useState } from 'react';
 export const CreateTaskContext = createContext(null);
-export const TaskContext = createContext(null);
+export const TaskContext = createContext("");
 function App() {
 
   const [createTask, setCreateTask] = useState(false)
