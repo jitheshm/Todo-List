@@ -9,8 +9,8 @@ function Task({title}) {
             <div className="p-4 ps-5 ms-5 col-12">
                 <h3>{title}</h3>
                 <hr />
-                <PriorityTask/>
-                <PriorityTask/>
+                <PriorityTask priority="High Priority"/>
+                <PriorityTask priority="Low Priority"/>
                 
             </div>
 

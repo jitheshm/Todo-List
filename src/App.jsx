@@ -1,4 +1,4 @@
-import Sidebar from "./components/Sidebar"
+
 import './App.css'
 
 import CreateTask from "./components/CreateTask"
@@ -10,7 +10,11 @@ import {
 import Upcoming from "./pages/Upcoming";
 import Pending from "./pages/Pending";
 import Completed from "./pages/Completed";
+import { createContext, useState } from 'react';
+export const CreateTaskContext = createContext(null);
 function App() {
+
+  const [createTask, setCreateTask] = useState(false)
 
   const router = createBrowserRouter([
     {
@@ -29,16 +33,18 @@ function App() {
       path: "/completed",
       element: <Completed />,
     },
-    
+
   ]);
 
 
   return (
     <main>
-    
+
       {/* <Today /> */}
-      <RouterProvider router={router} />
-      {/* <CreateTask/> */}
+      <CreateTaskContext.Provider value={{ createTask, setCreateTask }}>
+        <RouterProvider router={router} />
+      </CreateTaskContext.Provider>
+      {createTask && <CreateTask />}
     </main>
   )
 }

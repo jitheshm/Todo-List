@@ -1,9 +1,12 @@
+import { useContext } from "react"
 import { Link } from "react-router-dom"
+import { CreateTaskContext } from "../App"
 
 
 
 
 function Sidebar() {
+    const {createTask, setCreateTask} = useContext(CreateTaskContext)
     return (
         <>
             <div>
@@ -55,9 +58,11 @@ function Sidebar() {
                             </Link>
                         </li>
                         <li>
-                            <a href="#" className="nav-link py-3 border-bottom text-white" title="Add Task" data-bs-toggle="tooltip" data-bs-placement="right">
+                            <button onClick={()=>{
+                                setCreateTask((prev)=>!prev)
+                            }} className="nav-link py-3 border-bottom text-white" title="Add Task" data-bs-toggle="tooltip" data-bs-placement="right">
                                 <img src="images/plus.png" alt srcSet width={16} height={18} />
-                            </a>
+                            </button>
                         </li>
                     </ul>
                 </div>
