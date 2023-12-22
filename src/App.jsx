@@ -12,9 +12,11 @@ import Pending from "./pages/Pending";
 import Completed from "./pages/Completed";
 import { createContext, useState } from 'react';
 export const CreateTaskContext = createContext(null);
+export const TaskContext = createContext(null);
 function App() {
 
   const [createTask, setCreateTask] = useState(false)
+  const [task, setTask] = useState([])
 
   const router = createBrowserRouter([
     {
@@ -42,7 +44,9 @@ function App() {
 
       {/* <Today /> */}
       <CreateTaskContext.Provider value={{ createTask, setCreateTask }}>
-        <RouterProvider router={router} />
+        <TaskContext.Provider value={{ task, setTask }}>
+          <RouterProvider router={router} />
+        </TaskContext.Provider>
       </CreateTaskContext.Provider>
       {createTask && <CreateTask />}
     </main>
