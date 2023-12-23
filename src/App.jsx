@@ -13,10 +13,11 @@ import Completed from "./pages/Completed";
 import { createContext, useState } from 'react';
 export const CreateTaskContext = createContext(null);
 export const TaskContext = createContext("");
-function App() {
 
+import sampleData from "./data.json"
+function App() {
   const [createTask, setCreateTask] = useState(false)
-  const [task, setTask] = useState([])
+  const [task, setTask] = useState(sampleData)
 
   const router = createBrowserRouter([
     {
