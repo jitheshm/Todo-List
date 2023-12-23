@@ -6,7 +6,7 @@ function Upcoming() {
     return (
         <>
             <Layout>
-                <Task title="Upcoming Task" />
+                <Task title="Upcoming Task" page='Upcoming'/>
             </Layout>
 
         </>

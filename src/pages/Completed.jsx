@@ -6,7 +6,7 @@ function Completed() {
     return (
         <>
             <Layout>
-                <Task title="Completed Tasks" />
+                <Task title="Completed Tasks" page='Completed' />
             </Layout>
 
         </>

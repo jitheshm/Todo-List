@@ -6,7 +6,7 @@ function Pending() {
     return (
         <>
             <Layout>
-                <Task title="Pending Task" />
+                <Task title="Pending Task" page='Pending' />
             </Layout>
 
         </>
