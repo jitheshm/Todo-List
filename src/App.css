@@ -108,5 +108,20 @@ main {
 .textinputContent{
 height: 100px;
 }
+.calendar{
+  /* background-color: aqua; */
+  position: absolute;
+  left: -25px;
+  top: -4px;
+  width: 45px;
+  height: 45px;
+  background-image: url(/images/calendar.png); 
+  background-size: cover;
+  color: black;
+  line-height: 12px;
+  text-align: center;
+  padding-top: 14px;
+  font-size: small;
+}
 .fw-semibold { font-weight: 600; }
 .lh-tight { line-height: 1.25; }
