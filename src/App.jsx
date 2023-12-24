@@ -37,7 +37,7 @@ function App() {
       element: <Completed />,
     },
 
-  ]);
+  ],{ basename: '/Todo-List/'});
 
 
   return (

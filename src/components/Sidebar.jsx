@@ -1,6 +1,10 @@
 import { useContext } from "react"
 import { Link } from "react-router-dom"
 import { CreateTaskContext } from "../App"
+import run from '../../public/images/run.png'
+import calendar from '../../public/images/calendar.png'
+import date from '../../public/images/date.png'
+import plus from '../../public/images/plus.png'
 
 
 
@@ -35,7 +39,7 @@ function Sidebar() {
                         <li className="nav-item">
                             <Link to={`/`} className="nav-link py-3 border-bottom" title="Today" data-bs-toggle="tooltip" data-bs-placement="right">
                                  
-                                <img src="images/run.png" alt srcSet width={16} height={18} />
+                                <img src={run} alt srcSet width={16} height={18} />
                             </Link>
                         </li>
                         <li>
@@ -54,14 +58,14 @@ function Sidebar() {
                         </li>
                         <li>
                             <Link to={`/completed`} className="nav-link py-3 border-bottom text-white" title="Completed" data-bs-toggle="tooltip" data-bs-placement="right">
-                                <img src="images/date.png" alt srcSet width={16} height={18} />
+                                <img src={date} alt srcSet width={16} height={18} />
                             </Link>
                         </li>
                         <li>
                             <button onClick={()=>{
                                 setCreateTask((prev)=>!prev)
                             }} className="nav-link py-3 border-bottom text-white" title="Add Task" data-bs-toggle="tooltip" data-bs-placement="right">
-                                <img src="images/plus.png" alt srcSet width={16} height={18} />
+                                <img src={plus} alt srcSet width={16} height={18} />
                             </button>
                         </li>
                     </ul>
