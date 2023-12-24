@@ -1,11 +1,42 @@
+import { useContext, useEffect } from "react";
+import { TaskContext } from "../App";
 
 
-function TaskCard({title,description,date}) {
+function TaskCard({ title, description, date, index, page }) {
     // console.log(title,description,date);
-   
+    const { task, setTask } = useContext(TaskContext)
+
     let month = new Date(date).toLocaleString('default', { month: 'short' });
-    date=date.split('-')
+    date = date.split('-')
     console.log(month);
+
+    const handleComplete = () => {
+        setTask((prev) => {
+            return prev.map((ele, curIndex) => {
+                if (curIndex === index) {
+                    console.log(ele);
+                    ele = {
+                        ...ele,
+                        status: "Completed"
+                    }
+                }
+                return ele
+            })
+
+        })
+    }
+    const handleDelete=()=>{
+        if(confirm('Are you sure'))
+        setTask((prev)=>{
+            return prev.filter((ele,curIndex)=>curIndex!=index)
+        })
+    }
+    useEffect(() => {
+        console.log(task);
+
+
+    }, [task])
+
     return (
         <>
             <div className="card m-3" style={{ width: '17rem', backgroundColor: '#445669' }}>
@@ -23,8 +54,10 @@ function TaskCard({title,description,date}) {
                     <p className="card-text">{description}</p>
 
                     <div className="d-flex justify-content-between">
-                        <a href="#" className="btn btn-danger">Delete</a>
-                        <a href="#" className="btn btn-success">Complete</a>
+                        <button onClick={handleDelete} className="btn btn-danger">Delete</button>
+                        {
+                            page!='Completed'?<button onClick={handleComplete} className="btn btn-success">Complete</button>:null
+                        }
                     </div>
                 </div>
             </div>

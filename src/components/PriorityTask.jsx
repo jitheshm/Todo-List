@@ -31,24 +31,24 @@ function PriorityTask({ priority, page }) {
                             // console.log(ele.date);
                             if (page === 'Today') {
                                 if (ele.priority === priority && ele.date === curDate && ele.status === 'Pending')
-                                    return <TaskCard {...ele} />
+                                    return <TaskCard {...ele} index={index} />
                                 else
                                     return null
                             } else if (page === 'Upcoming') {
                                 
                                 if (ele.priority === priority && ele.status === 'Pending' && new Date(curDate) < new Date(ele.date))
-                                    return <TaskCard {...ele} />
+                                    return <TaskCard {...ele} index={index} />
                                 else
                                     return null
                             } else if (page === 'Pending') {
                                
                                 if (ele.priority === priority && ele.status === 'Pending' && new Date(curDate) > new Date(ele.date))
-                                    return <TaskCard {...ele} />
+                                    return <TaskCard {...ele} index={index} />
                                 else
                                     return null
                             }else if(page==='Completed'){
                                 if (ele.priority === priority && ele.status === 'Completed')
-                                    return <TaskCard {...ele} />
+                                    return <TaskCard {...ele} index={index} page={page} />
                                 else
                                     return null
                             }
