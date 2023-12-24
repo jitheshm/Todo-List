@@ -123,5 +123,8 @@ height: 100px;
   padding-top: 14px;
   font-size: small;
 }
+.card-text{
+  height: 72px;
+}
 .fw-semibold { font-weight: 600; }
 .lh-tight { line-height: 1.25; }

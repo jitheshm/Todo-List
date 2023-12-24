@@ -40,7 +40,7 @@ function CreateTask() {
             <div className="taskInputContainer">
                 <div className="col-4 taskInput p-4 rounded text-center">
                     <input placeholder="Task Title" className="inputContent my-2" type="text" name="Task" value={title} onChange={handleTitleChange} />
-                    <textarea placeholder="Task Description" className="inputContent textinputContent my-2" maxLength={50} type="text" value={desc} onChange={handleDescChange} />
+                    <textarea placeholder="Task Description" className="inputContent textinputContent my-2" maxLength={80} type="text" value={desc} onChange={handleDescChange} />
                     <select name id className="inputContent my-2" value={priority} onChange={handlePriorityChange}>
                         <option value="" disabled selected>Select Task Priority</option>
                         <option value="High">High Priority</option>
