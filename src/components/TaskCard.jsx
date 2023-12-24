@@ -50,7 +50,7 @@ function TaskCard({ title, description, date, index, page }) {
                         </div>
                     </div>
                     <h5 className="card-title">{title}</h5>
-                    <h6 className="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                    <h6 className="card-subtitle mb-2 text-muted">#{date[0]}</h6>
                     <p className="card-text">{description}</p>
 
                     <div className="d-flex justify-content-between">
