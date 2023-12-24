@@ -1,61 +1,58 @@
 [
     {
-        "title": "Finish Project Proposal",
-        "description": "Complete and submit the project proposal before the deadline.",
+        "title": "Dev Feature X",
+        "description": "Code and test Feature X.",
         "priority": "High",
         "date": "2023-02-10",
-        "status":"Pending"
+        "status": "Pending"
     },
     {
-        "title": "Buy Groceries",
-        "description": "Purchase items for the week's meals and household supplies.",
-        "priority": "Low",
-        "date": "2023-02-15",
-        "status":"Pending"
-    },
-    {
-        "title": "Attend Team Meeting",
-        "description": "Participate in the weekly team meeting to discuss project updates.",
+        "title": "Bug Fixing Sprint",
+        "description": "Resolve reported bugs.",
         "priority": "High",
-        "date": "2023-02-12",
-        "status":"Pending"
+        "date": "2023-02-15",
+        "status": "Pending"
     },
     {
-        "title": "Exercise",
-        "description": "Go for a 30-minute jog or do a home workout routine.",
+        "title": "Code Review Session",
+        "description": "Participate in review.",
+        "priority": "Low",
+        "date": "2023-02-12",
+        "status": "Pending"
+    },
+    {
+        "title": "Update Docs",
+        "description": "Revise documentation.",
         "priority": "Low",
         "date": "2023-02-11",
-        "status":"Completed"
+        "status": "Completed"
     },
     {
-        "title": "Read Chapter 3",
-        "description": "Read and summarize Chapter 3 of the assigned book for the literature course.",
+        "title": "Tech Conference",
+        "description": "Attend tech event.",
         "priority": "High",
         "date": "2023-02-14",
-        "status":"Pending"
+        "status": "Pending"
     },
     {
-        "title": "Read Chapter 4",
-        "description": "Read and summarize Chapter 3 of the assigned book for the literature course.",
+        "title": "Sec Patch",
+        "description": "Implement security patch.",
         "priority": "High",
         "date": "2023-12-23",
-        "status":"Pending"
-        
+        "status": "Pending"
     },
     {
-        "title": "Read Chapter 5",
-        "description": "Read and summarize Chapter 3 of the assigned book for the literature course.",
-        "priority": "High",
+        "title": "Optimize Perf",
+        "description": "Optimize for speed.",
+        "priority": "Low",
         "date": "2023-12-23",
-        "status":"Completed"
-        
+        "status": "Completed"
     },
     {
-        "title": "Reads Chapter 6",
-        "description": "Read and summarize Chapter 3 of the assigned book for the literature course.",
+        "title": "Upgrade Framework",
+        "description": "Upgrade framework.",
         "priority": "High",
         "date": "2023-12-24",
-        "status":"Pending"
-        
+        "status": "Pending"
     }
 ]

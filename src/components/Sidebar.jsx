@@ -28,36 +28,36 @@ function Sidebar() {
                         <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm15 2h-4v3h4V4zm0 4h-4v3h4V8zm0 4h-4v3h3a1 1 0 0 0 1-1v-2zm-5 3v-3H6v3h4zm-5 0v-3H1v2a1 1 0 0 0 1 1h3zm-4-4h4V8H1v3zm0-4h4V4H1v3zm5-3v3h4V4H6zm4 4H6v3h4V8z" />
                     </symbol>
                 </svg>
-                <div className="d-flex flex-column flex-shrink-0 bg-dark m-2" style={{ width: '3.5rem', height: '100vh', zIndex: 10, borderRadius: 50, position: 'fixed' }}>
-                    <a href="/" className="d-block p-3 link-dark text-decoration-none" title="Icon-only" data-bs-toggle="tooltip" data-bs-placement="right">
-                        <svg className="bi" width={40} height={32}>
+                <div className="d-flex flex-column flex-shrink-0 bg-dark m-2 sideBar" >
+                    <Link to='/' className="d-block p-2 pt-3 link-dark text-decoration-none" title="ToDo List" data-bs-toggle="tooltip" data-bs-placement="right">
+                        <svg className="bi" width={40} height={32} color="#ffffff">
                             <use xlinkHref="#bootstrap" />
                         </svg>
-                        <span className="visually-hidden">Icon-only</span>
-                    </a>
+                        <span className="visually-hidden">ToDo List</span>
+                    </Link>
                     <ul className="nav nav-pills nav-flush flex-column mb-auto text-center">
                         <li className="nav-item">
-                            <Link to={`/`} className="nav-link py-3 border-bottom" title="Today" data-bs-toggle="tooltip" data-bs-placement="right">
+                            <Link to='/' className="nav-link py-3 border-bottom" title="Today" data-bs-toggle="tooltip" data-bs-placement="right">
                                  
                                 <img src={run} alt srcSet width={16} height={18} />
                             </Link>
                         </li>
                         <li>
-                            <Link to={`/upcoming`} className="nav-link py-3 border-bottom text-white" title="Upcoming" data-bs-toggle="tooltip" data-bs-placement="right">
+                            <Link to='/upcoming' className="nav-link py-3 border-bottom text-white" title="Upcoming" data-bs-toggle="tooltip" data-bs-placement="right">
                                 <svg className="bi" width={24} height={24} role="img" aria-label="Dashboard">
                                     <use xlinkHref="#speedometer2" />
                                 </svg>
                             </Link>
                         </li>
                         <li>
-                            <Link to={`/pending`} className="nav-link py-3 border-bottom text-white" title="pending" data-bs-toggle="tooltip" data-bs-placement="right">
+                            <Link to='/pending' className="nav-link py-3 border-bottom text-white" title="pending" data-bs-toggle="tooltip" data-bs-placement="right">
                                 <svg className="bi" width={24} height={24} role="img" aria-label="Orders">
                                     <use xlinkHref="#table" />
                                 </svg>
                             </Link>
                         </li>
                         <li>
-                            <Link to={`/completed`} className="nav-link py-3 border-bottom text-white" title="Completed" data-bs-toggle="tooltip" data-bs-placement="right">
+                            <Link to='/completed' className="nav-link py-3 border-bottom text-white" title="Completed" data-bs-toggle="tooltip" data-bs-placement="right">
                                 <img src={date} alt srcSet width={16} height={18} />
                             </Link>
                         </li>
