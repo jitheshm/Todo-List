@@ -1,10 +1,10 @@
 import { useContext } from "react"
 import { Link } from "react-router-dom"
 import { CreateTaskContext } from "../App"
-import run from '../../public/images/run.png'
-import calendar from '../../public/images/calendar.png'
-import date from '../../public/images/date.png'
-import plus from '../../public/images/plus.png'
+import run from '../assets/run.png'
+
+import date from '../assets/date.png'
+import plus from '../assets/plus.png'
 
 
 
