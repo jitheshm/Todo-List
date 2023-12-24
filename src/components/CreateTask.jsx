@@ -33,6 +33,9 @@ function CreateTask() {
         setCreateTask((prev)=>!prev)
 
     }
+    const handleCancel=()=>{
+        setCreateTask((prev)=>!prev)
+    }
 
     
     return (
@@ -48,7 +51,7 @@ function CreateTask() {
                     </select>
                     <input className="inputContent my-2" type="date" id name value={date} onChange={handleDateChange} />
                     <div>
-                        <button className="btn btn-danger my-2 mx-2 ">Cancel</button>
+                        <button className="btn btn-danger my-2 mx-2 " onClick={handleCancel}>Cancel</button>
                         <button className="btn btn-primary my-2 mx-2 " onClick={handleSubmit}>Add Task</button>
                     </div>
                 </div>
