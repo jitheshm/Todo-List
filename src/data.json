@@ -3,58 +3,58 @@
         "title": "Finish Project Proposal",
         "description": "Complete and submit the project proposal before the deadline.",
         "priority": "High",
-        "date": "10/02/2023",
+        "date": "2023-02-10",
         "status":"Pending"
     },
     {
         "title": "Buy Groceries",
         "description": "Purchase items for the week's meals and household supplies.",
         "priority": "Low",
-        "date": "15/02/2023",
+        "date": "2023-02-15",
         "status":"Pending"
     },
     {
         "title": "Attend Team Meeting",
         "description": "Participate in the weekly team meeting to discuss project updates.",
         "priority": "High",
-        "date": "12/02/2023",
+        "date": "2023-02-12",
         "status":"Pending"
     },
     {
         "title": "Exercise",
         "description": "Go for a 30-minute jog or do a home workout routine.",
         "priority": "Low",
-        "date": "11/02/2023",
+        "date": "2023-02-11",
         "status":"Completed"
     },
     {
         "title": "Read Chapter 3",
         "description": "Read and summarize Chapter 3 of the assigned book for the literature course.",
         "priority": "High",
-        "date": "14/02/2023",
+        "date": "2023-02-14",
         "status":"Pending"
     },
     {
-        "title": "Read Chapter 3",
+        "title": "Read Chapter 4",
         "description": "Read and summarize Chapter 3 of the assigned book for the literature course.",
         "priority": "High",
-        "date": "23/12/2023",
+        "date": "2023-12-23",
         "status":"Pending"
         
     },
     {
-        "title": "Read Chapter 3",
+        "title": "Read Chapter 5",
         "description": "Read and summarize Chapter 3 of the assigned book for the literature course.",
         "priority": "High",
-        "date": "23/12/2023",
+        "date": "2023-12-23",
         "status":"Completed"
         
     },
     {
-        "title": "Reads Chapter 3",
+        "title": "Reads Chapter 6",
         "description": "Read and summarize Chapter 3 of the assigned book for the literature course.",
         "priority": "High",
-        "date": "24/12/2023",
+        "date": "2023-12-24",
         "status":"Pending"
         
     }

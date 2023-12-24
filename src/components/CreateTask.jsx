@@ -1,5 +1,5 @@
-import { useContext, useState } from "react"
-import { TaskContext } from "../App"
+import { useContext, useEffect, useState } from "react"
+import { CreateTaskContext, TaskContext } from "../App"
 
 
 function CreateTask() {
@@ -9,6 +9,7 @@ function CreateTask() {
     const [priority, setPriority] = useState("")
     const [date, setDate] = useState("")
     const {task,setTask} = useContext(TaskContext)
+    const {setCreateTask} = useContext(CreateTaskContext)
 
     const handleTitleChange = (e) => {
         setTitle(e.target.value)
@@ -25,10 +26,15 @@ function CreateTask() {
     }
 
     const handleSubmit=()=>{
+        console.log(title,desc,priority,date);
         setTask((prev)=>{
-            return[...prev,{title,desc,priority,date}]
+            return[...prev,{title,description:desc,priority,date,status:"Pending"}]
         })
+        setCreateTask((prev)=>!prev)
+
     }
+
+    
     return (
         <>
             <div className="taskInputContainer">
@@ -37,8 +43,8 @@ function CreateTask() {
                     <textarea placeholder="Task Description" className="inputContent textinputContent my-2" maxLength={50} type="text" value={desc} onChange={handleDescChange} />
                     <select name id className="inputContent my-2" value={priority} onChange={handlePriorityChange}>
                         <option value="" disabled selected>Select Task Priority</option>
-                        <option value="High Priority">High Priority</option>
-                        <option value="Low Priority">Low Priority</option>
+                        <option value="High">High Priority</option>
+                        <option value="Low">Low Priority</option>
                     </select>
                     <input className="inputContent my-2" type="date" id name value={date} onChange={handleDateChange} />
                     <div>

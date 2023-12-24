@@ -12,7 +12,7 @@ import Pending from "./pages/Pending";
 import Completed from "./pages/Completed";
 import { createContext, useState } from 'react';
 export const CreateTaskContext = createContext(null);
-export const TaskContext = createContext("");
+export const TaskContext = createContext(null);
 
 import sampleData from "./data.json"
 function App() {
@@ -37,7 +37,7 @@ function App() {
       element: <Completed />,
     },
 
-  ],{ basename: '/Todo-List/'});
+  ], { basename: '/Todo-List/' });
 
 
   return (
@@ -47,9 +47,10 @@ function App() {
       <CreateTaskContext.Provider value={{ createTask, setCreateTask }}>
         <TaskContext.Provider value={{ task, setTask }}>
           <RouterProvider router={router} />
+          {createTask && <CreateTask />}
         </TaskContext.Provider>
       </CreateTaskContext.Provider>
-      {createTask && <CreateTask />}
+
     </main>
   )
 }

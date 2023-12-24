@@ -2,9 +2,9 @@
 
 function TaskCard({title,description,date}) {
     // console.log(title,description,date);
-    date = date.split('/')
-    console.log(date); 
-    let month = new Date(`${date[2]}-${date[1]}-${date[0]}`).toLocaleString('default', { month: 'short' });
+   
+    let month = new Date(date).toLocaleString('default', { month: 'short' });
+    date=date.split('-')
     console.log(month);
     return (
         <>
@@ -13,7 +13,7 @@ function TaskCard({title,description,date}) {
                     <div className="">
                         <div className="calendar">
                             <div style={{ width: '40px', height: '30px' }}>
-                                <div className="calendar__date">{date[0]}</div>
+                                <div className="calendar__date">{date[2]}</div>
                                 <div className="calendar__month">{month}</div>
                             </div>
                         </div>

@@ -10,11 +10,11 @@ function PriorityTask({ priority, page }) {
 
 
     let newDate = new Date()
-    // console.log(newDate);
+     console.log(newDate);
     let date = newDate.getDate();
     let month = newDate.toLocaleString('default', { month: 'numeric' });
     let year = newDate.getFullYear();
-    let curDate = `${date}/${month}/${year}`
+    let curDate = `${year}-${month}-${date}`
      console.log(curDate);
 
 
@@ -35,14 +35,14 @@ function PriorityTask({ priority, page }) {
                                 else
                                     return null
                             } else if (page === 'Upcoming') {
-                                let eleDate = ele.date.split('/')
-                                if (ele.priority === priority && ele.status === 'Pending' && new Date(`${year}-${month}-${date}`) < new Date(`${eleDate[2]}-${eleDate[1]}-${eleDate[0]}`))
+                                
+                                if (ele.priority === priority && ele.status === 'Pending' && new Date(curDate) < new Date(ele.date))
                                     return <TaskCard {...ele} />
                                 else
                                     return null
                             } else if (page === 'Pending') {
-                                let eleDate = ele.date.split('/')
-                                if (ele.priority === priority && ele.status === 'Pending' && new Date(`${year}-${month}-${date}`) > new Date(`${eleDate[2]}-${eleDate[1]}-${eleDate[0]}`))
+                               
+                                if (ele.priority === priority && ele.status === 'Pending' && new Date(curDate) > new Date(ele.date))
                                     return <TaskCard {...ele} />
                                 else
                                     return null
