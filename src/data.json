@@ -54,5 +54,61 @@
         "priority": "High",
         "date": "2023-12-24",
         "status": "Pending"
+    },
+    {
+        "title": "Feature Development",
+        "description": "Code and test new feature implementation.",
+        "priority": "High",
+        "date": "2024-01-10",
+        "status": "Pending"
+    },
+    {
+        "title": "Bug Resolution",
+        "description": "Address reported bugs and ensure fixes.",
+        "priority": "High",
+        "date": "2024-01-15",
+        "status": "Pending"
+    },
+    {
+        "title": "Code Review",
+        "description": "Participate in code review session.",
+        "priority": "Low",
+        "date": "2024-01-12",
+        "status": "Pending"
+    },
+    {
+        "title": "Documentation Update",
+        "description": "Revise and update project documentation.",
+        "priority": "Low",
+        "date": "2023-12-30",
+        "status": "Completed"
+    },
+    {
+        "title": "Tech Conference",
+        "description": "Attend annual tech conference for insights.",
+        "priority": "Low",
+        "date": "2024-02-14",
+        "status": "Pending"
+    },
+    {
+        "title": "Security Patch",
+        "description": "Implement latest security patch for safety.",
+        "priority": "Low",
+        "date": "2024-01-23",
+        "status": "Pending"
+    },
+    {
+        "title": "Performance Optimize",
+        "description": "Optimize code for better performance.",
+        "priority": "Low",
+        "date": "2023-12-23",
+        "status": "Completed"
+    },
+    {
+        "title": "Framework Upgrade",
+        "description": "Upgrade software framework to enhance features.",
+        "priority": "High",
+        "date": "2023-12-24",
+        "status": "Pending"
     }
 ]
