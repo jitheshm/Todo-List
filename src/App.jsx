@@ -15,6 +15,7 @@ export const CreateTaskContext = createContext(null);
 export const TaskContext = createContext(null);
 
 import sampleData from "./data.json"
+import Home from './pages/Home';
 function App() {
   const [createTask, setCreateTask] = useState(false)
   const [task, setTask] = useState(sampleData)
@@ -22,6 +23,10 @@ function App() {
   const router = createBrowserRouter([
     {
       path: "/",
+      element: <Home />,
+    },
+    {
+      path: "/today",
       element: <Today />,
     },
     {
