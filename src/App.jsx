@@ -42,7 +42,7 @@ function App() {
       element: <Completed />,
     },
 
-  ], { basename: '/Todo-List' });
+  ], { basename: '/todo-list' });
 
 
   return (

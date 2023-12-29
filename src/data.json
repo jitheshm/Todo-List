@@ -59,21 +59,21 @@
         "title": "Feature Development",
         "description": "Code and test new feature implementation.",
         "priority": "High",
-        "date": "2024-01-10",
+        "date": "2024-12-10",
         "status": "Pending"
     },
     {
         "title": "Bug Resolution",
         "description": "Address reported bugs and ensure fixes.",
         "priority": "High",
-        "date": "2024-01-15",
+        "date": "2024-12-15",
         "status": "Pending"
     },
     {
         "title": "Code Review",
         "description": "Participate in code review session.",
         "priority": "Low",
-        "date": "2024-01-12",
+        "date": "2024-10-12",
         "status": "Pending"
     },
     {
@@ -94,7 +94,7 @@
         "title": "Security Patch",
         "description": "Implement latest security patch for safety.",
         "priority": "Low",
-        "date": "2024-01-23",
+        "date": "2024-08-23",
         "status": "Pending"
     },
     {
