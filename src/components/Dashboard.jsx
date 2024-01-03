@@ -8,8 +8,10 @@ function Dashboard() {
     const { task } = useContext(TaskContext)
     var high = 0, low = 0, completed = 0, pending = 0, upcoming = 0, today = 0
     let newDate = new Date()
-    let date = newDate.getDate();
+    let date = newDate.getDate().toString();
+    date = date.length === 1 ? '0' + date : date;
     let month = newDate.toLocaleString('default', { month: 'numeric' });
+    month = month.length === 1 ? '0' + month : month;
     let year = newDate.getFullYear();
     let curDate = `${year}-${month}-${date}`
     task.forEach(element => {
